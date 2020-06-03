@@ -21,7 +21,7 @@ spec:
         app: api
     spec:
       containers:
-        - image: ${DOCKER_REGISTRY}/demo/api:${TAG}
+        - image: vmerino/go-app:latest
           name: api-go
           imagePullPolicy: Always
           ports:

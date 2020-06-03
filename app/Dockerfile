@@ -2,7 +2,6 @@ FROM golang:alpine AS build-env
 RUN apk --no-cache add git
 ADD . /src
 WORKDIR /src
-RUN go mod download
 RUN go build -o goapp
 
 FROM alpine

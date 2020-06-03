@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/gorilla/mux"
+	"log"
 	"net/http"
 )
 
@@ -22,7 +22,8 @@ func helloWorld ( w http.ResponseWriter, r *http.Request)  {
 }
 
 func main() {
-	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/hello", helloWorld)
-	http.ListenAndServe(":8080",router)
+
+	http.HandleFunc("/hello", helloWorld)
+	log.Println("Server up and running")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
