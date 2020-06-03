@@ -4,7 +4,6 @@ metadata:
   name: api
   labels:
     app: api
-  namespace: ${NAMESPACE}
 spec:
   replicas: 1
   selector:

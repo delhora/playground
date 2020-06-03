@@ -1,0 +1,20 @@
+{
+  "name": "Víctor",
+  "surname": "Merino",
+  "age": "35",
+  "pets": {
+    "cat": "Ko"
+  },
+  "likes": [
+    "videogames",
+    "padel",
+    "beer",
+    "books",
+    "japan"
+  ],
+  "dislikes": [
+    "Fake Sushi",
+    "Loosing at Catán",
+    "many more :)"
+  ]
+}
